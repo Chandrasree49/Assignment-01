@@ -195,3 +195,68 @@ header {
 .middle button:hover {
   background: #1d4ed8;
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sponsors{
+    background:#f8fafc;
+    padding:80px 20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.sponsors h2{
+    text-align:center;
+    font-size:40px;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.sponsors p{
+    text-align:center;
+    color:#6b7280;
+    max-width:650px;
+    margin:0 auto 50px;
+    line-height:1.7;
+}
+
+.sponsor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.sponsor-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.sponsor-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.sponsor-card img{
+    width:120px;
+    filter:grayscale(100%);
+    transition:.3s;
+}
+
+.sponsor-card:hover img{
+    filter:grayscale(0%);
+}
